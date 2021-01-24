@@ -1,23 +1,8 @@
 <h1 align = "center"> </h1>
 
 <p align = "center">
-<img src = "https://theme.zdassets.com/theme_assets/680652/3abc1fe11ed0a385b1298f0a1e44a7d7d5f78fc1.png">
+<img src = "https://theme.zdassets.com/theme_assets/680652/3abc1fe11ed0a385b1298f0a1e44a7d7d5f78fc1.png" width='500' height='100'>
  </p>
-
-
-
-
-
-Content
-Team members have drafted their project, including the following:
-
-✓ Selected topic
-✓ Reason why they selected their topic
-✓ Description of their source of data
-✓ Questions they hope to answer with
-the data
-
-
 
 LendingClub is a company that enables people looking to apply for unsecured personal loans by supplying details about themselves and the loans that they would like to request (between 1K-40K). On the basis of the borrower’s credit score, credit history, employment history, desired loan amount and the borrower’s debt-to-income ratio, LendingClub determined whether the borrower was creditworthy and allowed the loan or not. The team at WokeRUs looked to investigate if it was possible to predict the approval any loan based upon features listed. This was explored in the various branches on the repository as follows:
 
