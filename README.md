@@ -1,7 +1,5 @@
 <h1 align = "center"> Circle Role </h1>
 
-The member in the circle role will create a mockup of a database with a set of sample data, or even fabricated data. This will ensure the database will work seamlessly with the rest of the project.
-
 ## Resources
 
 - Data Extracted kaggle dataset - [Lending Club loan data](https://www.kaggle.com/wordsforthewise/lending-club)
@@ -24,6 +22,11 @@ The member in the circle role will create a mockup of a database with a set of s
 - In further exploratory analysis, cleaning data was carried out where most of our features were having characters paired with numerics.
 - After a thorough run with data preprocessing and cleaning, we have achieved criteria that seem to play a vital role in deciding or rejecting a loan application.
 - This dataset will be tied into our analysis further. (maybe consider other valuable features and also predict an individual's chance of securing a loan)
+
+<p align = "center">
+<img src = "https://github.com/JoseCalucag/WokeRUs/blob/CircleRole/resources/database.png" width = "700" height = "300">
+ </p>
+
 
 ## Database Setup, working Branch and Communication
 
