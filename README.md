@@ -1,6 +1,6 @@
 # Machine Learning for Lending Prediction
 
-The project implements MAchine Learning in two progressive stages:
+The project implements Machine Learning in two progressive stages:
 
 ## Stage 1: Binary Classification
 The first Machine Learning ALgorithm trains a binary classifier to predict if the applicant should be accepted or rejected for a loan from Lending Club. 
