@@ -1,8 +1,7 @@
 <h1 align = "center"> X ROLE </h1>
 
-The member in the X role will decide which technologies will be used for each step of the project.
-
 # Technologies Used
+
 ## Data Cleaning and Analysis
 Pandas was used to clean the data and perform an exploratory analysis. We converted the csv files for the accepted and rejected data to dataframes using Pandas. Further analysis will be completed using Python and Jupyter Notebook. 
 
