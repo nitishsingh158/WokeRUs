@@ -11,8 +11,8 @@ Lists the technologies that were used in the project and how they were implement
 <br>
 
 <h4> CircleRole </h4>
-Explores the process of how the database was created prior to modelling
+Explores the process of how the database was created prior to modelling.
 <br>
 
 <h4> TriangleRole </h4>
-Investigates the data by running it through a machine learning model
+Investigates the data by running it through a machine learning model.
