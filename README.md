@@ -1,15 +1,5 @@
 <h1 align = "center"> Circle Role </h1>
 
-## Resources
-
-- Data Extracted kaggle dataset - [Lending Club loan data](https://www.kaggle.com/wordsforthewise/lending-club)
-- Data dictionary kaggle - [Dictionary](https://www.kaggle.com/jonchan2003/lending-club-data-dictionary)
-- VS Code v1.52.1
-- Jupyter Notebooks v6.0.3
-- Python v3.7.9
-- GitHub
-- Zoom Client for Meetings v5.4.9
-
 ## Dataset Exploratory Analysis
 
 - The dataset was available to us in a.csv file, and since only two tables were present an ERD was not necessary
