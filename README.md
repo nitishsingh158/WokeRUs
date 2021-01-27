@@ -33,7 +33,7 @@ CircleRole
 - This dataset will be tied into our analysis further. (maybe consider other valuable features and also predict an individual's chance of securing a loan)
 
 <p align = "center">
-<img src = "https://github.com/JoseCalucag/WokeRUs/resources/database.png" width = "700" height = "300">
+<img src = "https://github.com/JoseCalucag/WokeRUs/blob/main/resources/database.png" width = "700" height = "300">
  </p>
 
 
