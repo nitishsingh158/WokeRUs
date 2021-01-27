@@ -1,24 +1,27 @@
-<h1 align = "center"> </h1>
-
 <p align = "center">
 <img src = "https://theme.zdassets.com/theme_assets/680652/3abc1fe11ed0a385b1298f0a1e44a7d7d5f78fc1.png" width='500' height='100'>
  </p>
 
 LendingClub is a company that enables people looking to apply for unsecured personal loans by supplying details about themselves and the loans that they would like to request (between 1K-40K). On the basis of the borrower’s credit score, credit history, employment history, desired loan amount and the borrower’s debt-to-income ratio, LendingClub determined whether the borrower was creditworthy and allowed the loan or not. The team at WokeRUs looked to investigate if it was possible to predict the approval of any loan based upon features listed. This was explored in the various branches on the repository as follows:
 
-* X Role <br>
-Lists the technologies that were used in the project and how they were implemented.
-<br>
+<h1 align = "center"> X Role </h1>
 
-* Circle Role <br>
-Explores the process of how the database was created before modelling.
-<br>
+<p align = "center">
+<img src = "https://miro.medium.com/max/1200/1*WizgUsFeUgISS7vkFl4dEA.jpeg" width='400' height='200'>
+ </p>
 
-* Triangle Role <br>
-Investigates the data by running it through a machine learning model.
-main
+The technology.md describes the process taking of raw datasets and how they were transformed into a model that we used for our machine learning model. For quick reference, these are the resources that we used:
 
-CircleRole
+- Data Extracted kaggle dataset - [Lending Club loan data](https://www.kaggle.com/wordsforthewise/lending-club)
+- Data dictionary kaggle - [Dictionary](https://www.kaggle.com/jonchan2003/lending-club-data-dictionary)
+- VS Code v1.52.1
+- Jupyter Notebooks v6.0.3
+- Python v3.7.9
+- GitHub
+- Zoom Client for Meetings v5.4.9
+
+<h1 align = "center"> Circle Role </h1>
+
 ## Dataset Exploratory Analysis
 
 - The dataset was available to us in a.csv file, and since only two tables were present an ERD was not necessary
@@ -36,7 +39,6 @@ CircleRole
 <img src = "https://github.com/JoseCalucag/WokeRUs/blob/main/resources/database.png" width = "700" height = "300">
  </p>
 
-
 ## Database Setup, working Branch and Communication
 
 - Our search for a more refined or clean data was not successful, and the lending club dataset being the most comprehensive.
@@ -44,26 +46,9 @@ CircleRole
 - Using the data uploaded on to GitHub, data was then wrangled for optimizing our dataset to suit our needs and the initial machine learning algorithm.
 - 4 branches were initialized and setup on Github to ensure that the database and contents do not be overwritten (just because the sheer size)
 - Main communication is through zoom client for meetings software and slack for progress tracking and deliverables time line.
+<br>
 
-XRole
-<h1 align = "center"> X Role </h1>
-
-<p align = "center">
-<img src = "https://miro.medium.com/max/1200/1*WizgUsFeUgISS7vkFl4dEA.jpeg" width='400' height='200'>
- </p>
-
-The technology.md describes the process taking raw datasets and how they were transformed intoa model that we used for our machine learning model. For quick reference, these are the resources that we used:
-
-- Data Extracted kaggle dataset - [Lending Club loan data](https://www.kaggle.com/wordsforthewise/lending-club)
-- Data dictionary kaggle - [Dictionary](https://www.kaggle.com/jonchan2003/lending-club-data-dictionary)
-- VS Code v1.52.1
-- Jupyter Notebooks v6.0.3
-- Python v3.7.9
-- GitHub
-- Zoom Client for Meetings v5.4.9
-
-TriangleRole
-# Traingle Role 
+<h1 align = "center"> Triangle Role </h1>
 
 # Machine Learning for Lending Prediction
 
@@ -83,7 +68,7 @@ The following algorithms will be used and compared for accuracy and implementati
 2. Decision Tree Algorithm
 3. Neural Networks
 
-### Current Progress:
+## Current Progress:
 The team has successfully implemented the Logistic Regression for Stage 1 Analysis, yielding an 88.5% accuracy on test data. The next septs will to implement and compare SVM and Neural Algorithms before selecting the final model. ONe the final Stage 1 algorithm is selected, the team will commence Stage 2 Analysis.  
 
 <p align = "center">
