@@ -87,5 +87,5 @@ The following algorithms will be used and compared for accuracy and implementati
 The team has successfully implemented the Logistic Regression for Stage 1 Analysis, yielding an 88.5% accuracy on test data. The next septs will to implement and compare SVM and Neural Algorithms before selecting the final model. ONe the final Stage 1 algorithm is selected, the team will commence Stage 2 Analysis.  
 
 <p align = "center">
-<img src = "https://github.com/JoseCalucag/WokeRUs/resources/ML.png" width = "700" height = "300">
+<img src = "https://github.com/JoseCalucag/WokeRUs/blob/main/resources/ML.png" width = "700" height = "300">
  </p>
