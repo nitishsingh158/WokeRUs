@@ -44,4 +44,20 @@ CircleRole
 - Using the data uploaded on to GitHub, data was then wrangled for optimizing our dataset to suit our needs and the initial machine learning algorithm.
 - 4 branches were initialized and setup on Github to ensure that the database and contents do not be overwritten (just because the sheer size)
 - Main communication is through zoom client for meetings software and slack for progress tracking and deliverables time line.
-=======
+
+XRole
+<h1 align = "center"> X Role </h1>
+
+<p align = "center">
+<img src = "https://miro.medium.com/max/1200/1*WizgUsFeUgISS7vkFl4dEA.jpeg" width='400' height='200'>
+ </p>
+
+The technology.md describes the process taking raw datasets and how they were transformed intoa model that we used for our machine learning model. For quick reference, these are the resources that we used:
+
+- Data Extracted kaggle dataset - [Lending Club loan data](https://www.kaggle.com/wordsforthewise/lending-club)
+- Data dictionary kaggle - [Dictionary](https://www.kaggle.com/jonchan2003/lending-club-data-dictionary)
+- VS Code v1.52.1
+- Jupyter Notebooks v6.0.3
+- Python v3.7.9
+- GitHub
+- Zoom Client for Meetings v5.4.9
