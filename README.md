@@ -39,7 +39,7 @@ The technology.md describes the process taking of raw datasets and how they were
 <img src = "https://github.com/JoseCalucag/WokeRUs/blob/main/resources/database.png" width = "700" height = "300">
  </p>
 
-## Database Setup, working Branch and Communication
+## Database Setup and Communication
 
 - Our search for a more refined or clean data was not successful, and the lending club dataset being the most comprehensive.
 - The dataset was uploaded into GitHub as a large file transfer.
@@ -47,6 +47,18 @@ The technology.md describes the process taking of raw datasets and how they were
 - 4 branches were initialized and setup on Github to ensure that the database and contents do not be overwritten (just because the sheer size)
 - Main communication is through zoom client for meetings software and slack for progress tracking and deliverables time line.
 <br>
+
+## Database:
+
+- Since the data we possess do not have any relational features that we could use or create an ERD, the datasets we have were merged into one big consolidated dataset.
+- Since there is no schema, we collectively decided to use MongoDB as this was the easiest way to store our data.
+- Storing data locally (each members PC) was the easiest form to work with as dealing with resources such as storage space on the cloud was challenging.
+- We Decided to sample our large dataset, 5% of the raw data, was sampled to stay within the limits of our allocated space and memory usage on the cloud (MongoDB Atlas)
+- Successfully exported the dataset (accepted and rejected files at 5% sampled data) and we were able to also import it to our notebook.
+- Our dataset is massive, hence we want to make use of every data point we can to generate a better model for prediction as well as classification.
+- Hence, our main raw or original dataset is still available locally to ensure we are using our resources to its maximum potential.
+
+![Database_screenshot](resources/datbase_mngo.png)
 
 <h1 align = "center"> Triangle Role </h1>
 
