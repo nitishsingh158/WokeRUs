@@ -105,5 +105,5 @@ The following algorithms will be used and compared for accuracy and implementati
 - we should have a decision by next deliverable.
 
 <p align = "center">
-<img src = "https://github.com/JoseCalucag/WokeRUs/blob/main/resources/smote_ml.png" width = "700" height = "300">
+<img src = "https://github.com/JoseCalucag/WokeRUs/blob/main/resources/smote_ml.png" width = "500" height = "300">
  </p>
