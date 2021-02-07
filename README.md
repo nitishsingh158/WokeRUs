@@ -4,6 +4,19 @@
 
 LendingClub is a company that enables people looking to apply for unsecured personal loans by supplying details about themselves and the loans that they would like to request (between 1K-40K). On the basis of the borrower’s credit score, credit history, employment history, desired loan amount and the borrower’s debt-to-income ratio, LendingClub determined whether the borrower was creditworthy and allowed the loan or not. The team at WokeRUs looked to investigate if it was possible to predict the approval of any loan based upon features listed. This was explored in the various branches on the repository as follows:
 
+## Project Outline:
+
+The following is the project outline, with more details on each of the steps discussed further down in the different sections:
+
+- Data was downloaded from Kaggle for accepted and rejected loans.
+- The data was first cleaned up to make sure the same required columns for accepted and rejected data were present in a single file.
+- The two datasets were merged with only the required columns included.
+- Machine learning was used to predict if a loan will be accepted or rejected based on the columns selected.
+- Data for accepted loans was looked at once more to determine what columns affect interest rates
+- Data was cleaned up with all unnecessary columns removed.
+- 5 different interest rate ranges were determined based on the "grades" assigned by lending club
+- The top columns that affected this grade were selected for deep machine learning, to predict an interest rate range for an accepted candidate based on the most influencial columns. 
+
 <h1 align = "center"> X Role </h1>
 
 <p align = "center">
@@ -19,6 +32,10 @@ The technology.md describes the process taking of raw datasets and how they were
 - Python v3.7.9
 - GitHub
 - Zoom Client for Meetings v5.4.9
+
+## Communication Protocol
+The main methods of communication were using Slack for daily updates via text, and Zoom for virtual meetings 4 times a week. Additionally, GitHub commit comments were used to indicate any changes done to ensure that the team members are aware of changes.
+
 
 <h1 align = "center"> Circle Role </h1>
 
