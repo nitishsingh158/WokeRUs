@@ -59,7 +59,7 @@ The main methods of communication were using Slack for daily updates via text, a
 - 4 branches were initialized and setup on Github to ensure that the database and contents do not be overwritten (just because the sheer size)
 - Main communication is through zoom client for meetings software and slack for progress tracking and deliverables time line.
 
-## Database:
+## Database
 
 - Since the data we possess do not have any relational features that we could use or create an ERD, the datasets we have were merged into one big consolidated dataset.
 - Since there is no schema, we collectively decided to use MongoDB as this was the easiest way to store our data.
