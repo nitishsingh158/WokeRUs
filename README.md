@@ -17,8 +17,6 @@ The following is the project outline, with more details on each of the steps dis
 - 5 different interest rate ranges were determined based on the "grades" assigned by lending club
 - The top columns that affected this grade were selected for deep machine learning, to predict an interest rate range for an accepted candidate based on the most influencial columns. 
 
-<h1 align = "center"> X Role </h1>
-
 <p align = "center">
 <img src = "https://miro.medium.com/max/1200/1*WizgUsFeUgISS7vkFl4dEA.jpeg" width='400' height='200'>
  </p>
@@ -35,8 +33,6 @@ The technology.md describes the process taking of raw datasets and how they were
 
 ## Communication Protocol
 The main methods of communication were using Slack for daily updates via text, and Zoom for virtual meetings 4 times a week. Additionally, GitHub commit comments were used to indicate any changes done to ensure that the team members are aware of changes.
-
-<h1 align = "center"> Circle Role </h1>
 
 ## Dataset Exploratory Analysis
 
@@ -62,7 +58,6 @@ The main methods of communication were using Slack for daily updates via text, a
 - Using the data uploaded on to GitHub, data was then wrangled for optimizing our dataset to suit our needs and the initial machine learning algorithm.
 - 4 branches were initialized and setup on Github to ensure that the database and contents do not be overwritten (just because the sheer size)
 - Main communication is through zoom client for meetings software and slack for progress tracking and deliverables time line.
-<br>
 
 ## Database:
 
@@ -76,13 +71,12 @@ The main methods of communication were using Slack for daily updates via text, a
 
 ![Database_screenshot](resources/datbase_mngo.png)
 
-<h1 align = "center"> Triangle Role </h1>
-
 # Machine Learning for Lending Prediction
 
 The project implements Machine Learning in two progressive stages:
 
 ## Stage 1: Binary Classification
+
 The first Machine Learning ALgorithm trains a binary classifier to predict if the applicant should be accepted or rejected for a loan from Lending Club. 
 The following algorithms will be used and compared for accuracy and implementation efficiency:
 1. Logistic Regression
@@ -90,16 +84,21 @@ The following algorithms will be used and compared for accuracy and implementati
 3. Neural Networks
 
 ## Stage 2: Interest Prediction
+
 The second Machine Learning Algorithm trains a regression model to predict the interest rate that should be provided to an accepted loan borrower.
 The following algorithms will be used and compared for accuracy and implementation efficiency:
 1. Polynomial regression
 2. Decision Tree Algorithm
 3. Neural Networks
 
-## Current Progress:
+## Current Progress
+
 ### Stage 1 Analysis
-- The team has successfully implemented the decision tree algorithim for Stage 1 Analysis (classifiying Loan accepted or not), yielding an 93.9% accuracy on test data. 
-### Stage 2 Analysis.  
+
+- The team has successfully implemented the decision tree algorithm for Stage 1 Analysis (classifying Loan accepted or not), yielding an 93.9% accuracy on test data.
+
+### Stage 2 Analysis
+
 - To implement a binning of applicants based on 28 features to predict the range of interest rates the applicant would fall under.
 - Currently deciding on dealing with nan values (either removing or replacing)
 - we should have a decision by next deliverable.
