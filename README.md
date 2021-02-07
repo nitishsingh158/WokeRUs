@@ -97,7 +97,12 @@ The following algorithms will be used and compared for accuracy and implementati
 3. Neural Networks
 
 ## Current Progress:
-The team has successfully implemented the Logistic Regression for Stage 1 Analysis, yielding an 88.5% accuracy on test data. The next septs will to implement and compare SVM and Neural Algorithms before selecting the final model. ONe the final Stage 1 algorithm is selected, the team will commence Stage 2 Analysis.  
+### Stage 1 Analysis
+- The team has successfully implemented the decision tree algorithim for Stage 1 Analysis (classifiying Loan accepted or not), yielding an 93.8% accuracy on test data. 
+### Stage 2 Analysis.  
+- To implement a binning of applicants based on 28 features to predict the range of interest rates the applicant would fall under.
+- Currently deciding on dealing with nan values (either removing or replacing)
+- we should have a decision by next deliverable.
 
 <p align = "center">
 <img src = "https://github.com/JoseCalucag/WokeRUs/blob/main/resources/ML.png" width = "700" height = "300">
