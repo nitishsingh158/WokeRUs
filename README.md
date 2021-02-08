@@ -77,7 +77,7 @@ The project implements Machine Learning in two progressive stages:
 
 ## Stage 1: Binary Classification
 
-The first Machine Learning ALgorithm trains a binary classifier to predict if the applicant should be accepted or rejected for a loan from Lending Club. 
+The first Machine Learning Algorithm trains a binary classifier to predict if the applicant should be accepted or rejected for a loan from Lending Club. 
 The following algorithms will be used and compared for accuracy and implementation efficiency:
 1. Logistic Regression
 2. SVM Algorithm
