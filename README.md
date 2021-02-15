@@ -4,6 +4,10 @@
 
 LendingClub is a company that enables people looking to apply for unsecured personal loans by supplying details about themselves and the loans that they would like to request (between 1K-40K). On the basis of the borrower’s credit score, credit history, employment history, desired loan amount and the borrower’s debt-to-income ratio, LendingClub determined whether the borrower was creditworthy and allowed the loan or not. The team at WokeRUs looked to investigate if it was possible to predict the approval of any loan based upon features listed. This was explored in the various branches on the repository as follows:
 
+## Presentation Deck Link
+
+https://docs.google.com/presentation/d/1wxTUs8_m18508qBnELvGLtDMG5xyXyQ7KO01LL08q00/edit#slide=id.gba2577a18d_0_158
+
 ## Project Outline:
 
 The following is the project outline, with more details on each of the steps discussed further down in the different sections:
