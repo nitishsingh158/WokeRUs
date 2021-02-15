@@ -3,3 +3,7 @@
 config.py
 
 __pycashe__
+.ipynb_checkpoints
+
+.gitattributes
+
