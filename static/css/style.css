@@ -1,80 +1,68 @@
 html{
-    background-color: darkslategray;
+  background-color: midnightblue;
 }
 
 .wrapper {
-    background-color: darkslategray;
-    display: grid;
-    grid-template-columns: 400px 500px 300px;
-    grid-template-rows: 200px 200px 200px;
-    grid-template-areas:
-        "top right"
-        "left right"
-        "bottom bottom ";
+  background-color: midnightblue;
+  display: grid;
+  grid-template-columns: 300px 550px 350px;
+  grid-template-rows: 170px 500px 170px;
+  grid-template-areas:
+      "topl header topr"
+      "left middle right"
+      "footerl footerm footerr";
 }
-.header {
-    grid-area: top;
- }
- .content {
-     grid-row: 2/4;
-     grid-column: 2/4;
- }
- 
+
 .logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    }
+  grid-area: topl;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
- .sidebar {
-    grid-area: left;
-    text-align: center;
- }
+.header {
+  grid-area: header;
+  text-align: center;
+}
 
-form {
-    display: grid;
-    padding: 1em;
-    background: darkslategray;
-    margin: 2rem auto 0 auto;
-    max-width: 600px;
-    padding: 1em;
-  }
+.about {
+  grid-area: left;
+  text-align: center;
+}
 
-  form label {
-    border: 1px solid gold;
-    text-align: center;
-  }
+.form {
+  grid-area: middle;
+  background: midnightblue;
+  margin: 1rem auto 0 auto;
+}
 
-  form input {
-    background: #fff;
-    border: 1px solid #9c9c9c;
-  }
-  
-  
-  label {
-    padding: 0.5em 0.5em 0.5em 0;
-  }
-  
-  input {
-    padding: 0.7em;
-    margin-bottom: 0.5rem;
-    align: auto;
-  }
-  input:focus {
-    outline: 3px solid gold;
-  }
-  
-  @media (min-width: 400px) {
-    form {
-      grid-template-columns: 200px 1fr;
-      grid-gap: 16px;
-    }
-  
-    label {
-      text-align: right;
-      grid-column: 1 / 2;
-    }
+form label {
+  border: 1px solid gold;
+  text-align: center;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  float: left;
+}
 
-  }
+form input {
+  background: #fff;
+  border: 1px solid #9c9c9c;
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
+  float: left;
+}
 
-  
+.input-styling{
+  height: 40px;
+  width: 250px;
+}
+
+.prediction {
+  grid-area: footerm;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 40px;
+}
+
+button{
+float: left;
+}

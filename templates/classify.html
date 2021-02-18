@@ -1,49 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     
-    <title>Classify Your Approval</title>
-        <div>
-            <img class = "logo" src="../static/images/WokeRUsLogo.png" alt="logo">
-        </div>
-        <div class="jumbotron text-center">
-            <h1 class = 'display-3'>WELCOME</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../static/css/newstyle.css">
+    <title>WokeRUs</title>
+</head>
+    
+<div class="contact-us">
+    <form action="{{url_for('predict')}}" method="POST">
+        <label for="credit_score" class="Credit_Score">Credit Score</label>
+        <input type="number" name= 'Credit_Score' class="input-styling" required='required'>
+
+        <label for="emp_length" class="Emp_Length">Employee Length</label>
+        <input type="number" name= 'Emp_Length' class="input-styling" required='required'>
         
-                <div style="text-align: center;" class='login'>
-                <h5>See if you are approved for a Loan</h1>
-                <h6> Enter the information for the following </h6>
-                <br>
-                <br>
+        <label for="dti" class="dti">Debt to Income Ratio</label>
+        <input type="number" step="0.01" name= 'Debt_income_ratio' class="input-styling" required='required'>
+
+        <label for="loan_amount" class="loan_amount"> Loan Amount</label>
+        <input type="number" name= 'Loan_Amount' class="input-styling" required='required'>
+
+        <button style="text-align: center;" type="submit" class='btn'>Submit</button>
     
-        <!-- Main input for Receiving Query to our ML-->
-        <div id = "container" style='color:green;'></div>
-        <!--form method="POST"-->
-            <form action="{{url_for('predict')}}" method="POST">
-                    <h6 style='color:black;'> Credit Score </h6> <input type="number" name= 'Credit_Score',placeholder='Credit_Score' required='required'><br>
-                    <h6 style='color:black;'> Employment Length </h6> <input type="number" name= 'Emp_Length' required='required'><br>
-                    <h6 style='color:black;'> Debt to Income Ratio </h6> <input type="number" step="0.01" name= 'Debt_income_ratio' required='required'><br>
-                    <h6 style='color:black;'> Loan Amount </h6> <input type="number" name= 'Loan_Amount' required='required'><br>
-                    <!--h6 style='color:black;'> Annual Income </!--h6> <input type="number" name= 'annual_inc' required='required'><br>
-                    <h6 style='color:black;'> Current monthly expenses debt </h6> <input type="number" name= 'curr_debt' required='required'><br>
-                    <h6 style='color:black;'> Current monthly expenses debt </h6> <input type="number" name= 'curr_debt' required='required'><br>
-                    <h6 style='color:black;'> Current monthly expenses debt </h6> <input type="number" name= 'curr_debt' required='required'><br>
-                    <h6 style='color:black;'> Current monthly expenses debt </h6> <input type="number" name= 'curr_debt' required='required'><br-->
-
-
-                    <button  type="submit" class='btn'> predict</button>  
-                    
-            <!--form action="{{url_for('interest')}}" method="POST">        
-                    <button--  type="submit" class='btn'> interest</button-->  
-                    
-                </div>
-            </form>
-        </div>
-<br>
-<br>
-<div style="text-align: center;">{{prediction_text}}</div>
-
-
-</html>
+    </form> 
+        <br><div class="prediction">{{prediction_text}}</div> 
+</div>
