@@ -15,19 +15,21 @@
     <div></div>
     <div style="size: 20px;"><b> Congratulations on your approval!</b></div>
 
+    <br><br><br><div class="prediction"><b>{{prediction_text}}</b></div> 
+
     <div class="contact-us">
         <form action="{{url_for('interest')}}" method="POST">
-            <label  for="credit_score" class="Credit_Score">Credit Score</label>
-            <input type="number" name= 'Credit_Score' class="input-styling" required='required'>
-
-            <label  for="emp_length" class="Emp_Length">Employee Length</label>
-            <input type="number" name= 'Emp_Length' class="input-styling" required='required'>
-    
-            <label for="dti" class="dti">Debt to Income Ratio</label>
-            <input type="number" step="0.01" name= 'Debt_income_ratio' class="input-styling" required='required'>
-
             <label for="loan_amount" class="loan_amount"> Loan Amount</label>
             <input type="number" name= 'Loan_Amount' class="input-styling" required='required'>
+            
+            <label for="dti" class="dti">Debt to Income Ratio</label>
+            <input type="number" step="0.01" name= 'Debt_income_ratio' class="input-styling" required='required'>
+            
+            <label  for="emp_length" class="Emp_Length">Employee Length</label>
+            <input type="number" name= 'Emp_Length' class="input-styling" required='required'>
+            
+            <label  for="credit_score" class="Credit_Score">Credit Score</label>
+            <input type="number" name= 'Credit_Score' class="input-styling" required='required'>
 
             <label for="annual_inc" class="annual_inc">Annual Income</label>
             <input type="number" name= 'annual_inc' class="input-styling" required='required'>
@@ -42,7 +44,7 @@
             
         </form>  
         
-        <div class="prediction">{{prediction_text}}</div> 
+        <br><br><br><div class="prediction"><b>{{prediction_text}}</b></div> 
      </div>
 
 </html>

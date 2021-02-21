@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for
-# from flask_pymongo import PyMongo
+from flask_pymongo import PyMongo
 import pymongo
 import pickle
 from sklearn.preprocessing import StandardScaler
@@ -9,7 +9,7 @@ import numpy as np
 app = Flask(__name__)
 app.config['MONGO_DBNAME'] = 'WokeRUS'
 app.config['MONGO_URI'] = "mongodb://localhost:27017/WokeRUS"
-# mongo = PyMongo(app)
+mongo = PyMongo(app)
 
 
 # Classification model
@@ -37,7 +37,7 @@ def predict():
 
        # int_features = {'Credit_Score':cs, 'Emp_Length':eml, 'Debt_income_ratio':dti, 'Loan_Amount':loa}
        if float(cs) < 600 or float(dti) > 45:
-              return render_template('classify.html', prediction_text = 'your application is rejected')
+              return render_template('classify.html', prediction_text = 'Sorry, We are unable to process your application at this time.')
        else:
               final_features = [np.array([cs,eml,dti,loa])]
               scaler = StandardScaler()
@@ -45,7 +45,7 @@ def predict():
               prediction = model_classfy.predict(final_features)
               
               if prediction == 0:
-                     return render_template('classify.html', prediction_text = 'your application is rejected')
+                     return render_template('classify.html', prediction_text = 'Sorry, We are unable to process your application at this time.')
               else:
                      # return redirect(url_for('/interest', args1= cs, args2=eml), code=307)
                      return redirect ('/interest?', code=302) #render_template('classify.html', prediction_text = 'your application is Approved')
@@ -57,7 +57,8 @@ def interest():
 
 @app.route('/interest', methods=['POST'])
 def calculation():
- 
+       
+       '''
        loa = request.form['Loan_Amount']
        dti = request.form['Debt_income_ratio']
        eml = request.form['Emp_Length']
@@ -65,12 +66,12 @@ def calculation():
        ai = request.form['annual_inc']
        inq = request.form['inq_last_6mths']
        acc = request.form['mo_sin_rcnt_tl']   
+       '''
 
        features = [float(x) for x in request.form.values()]
        final_features = [np.array(features)]
   
-       scaler = StandardScaler()
-       scaled = scaler.fit_transform(final_features)
+       scaled = model_scaler_regression.fit_transform(final_features)
        
        print(features)
        print(final_features)
@@ -83,7 +84,6 @@ def calculation():
        predictions_high = output+3
        prediction_range = f'Your estimated interesed is between {predictions_low}% - {predictions_high}%'
        return render_template('interest.html', prediction_text = prediction_range)
-
 
 
        # This information page would 
