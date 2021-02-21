@@ -1,8 +1,8 @@
 <p align = "center">
-<img src = "https://theme.zdassets.com/theme_assets/680652/3abc1fe11ed0a385b1298f0a1e44a7d7d5f78fc1.png" width='500' height='100'>
+<img src = "https://github.com/JoseCalucag/WokeRUs/blob/main/resources/WokeRUsLogo.png" width='500' height='100'>
  </p>
 
-LendingClub is a company that enables people looking to apply for unsecured personal loans by supplying details about themselves and the loans that they would like to request (between 1K-40K). On the basis of the borrower’s credit score, credit history, employment history, desired loan amount and the borrower’s debt-to-income ratio, LendingClub determined whether the borrower was creditworthy and allowed the loan or not. The team at WokeRUs looked to investigate if it was possible to predict the approval of any loan based upon features listed. This was explored in the various branches on the repository as follows:
+LendingClub is a company that enables people looking to apply for unsecured personal loans by supplying details about themselves and the loans that they would like to request (between 1K-40K). On the basis of the borrower’s credit score, credit history, employment history, desired loan amount and the borrower’s debt-to-income ratio, LendingClub determined whether the borrower was creditworthy and allowed the loan or not. The team at WokeRUs looked to investigate if it was possible to predict the approval of any loan based upon features listed.
 
 ## Presentation Deck Link
 
@@ -12,21 +12,15 @@ https://docs.google.com/presentation/d/1wxTUs8_m18508qBnELvGLtDMG5xyXyQ7KO01LL08
 
 The following is the project outline, with more details on each of the steps discussed further down in the different sections:
 
-- Data was downloaded from Kaggle for accepted and rejected loans.
-- The data was first cleaned up to make sure the same required columns for accepted and rejected data were present in a single file.
-- The two datasets were merged with only the required columns included.
-- Machine learning was used to predict if a loan will be accepted or rejected based on the columns selected.
-- Data for accepted loans was looked at once more to determine what columns affect interest rates
-- Data was cleaned up with all unnecessary columns removed.
-- 5 different interest rate ranges were determined based on the "grades" assigned by lending club
-- The top columns that affected this grade were selected for deep machine learning, to predict an interest rate range for an accepted candidate based on the most influencial columns. 
+- Dataset was retrieved from Kaggle for accepted and rejected loans.
+- Data was first cleaned up to make sure the same required columns for accepted and rejected data were present in a single file.
+- The two datasets were merged with only the required columns included into a consolidated dataset.
+- Machine learning (Decision Tree with ADABOOT) was used to predict if a loan will be accepted or rejected based on features.
+- Data for accepted loans was looked into with more detail to determine what columns are correlated with interest rates.
+- Data was cleaned up with all unnecessary columns removed. (Leaving us with 96 of the 151 columns)
 
-<p align = "center">
-<img src = "https://miro.medium.com/max/1200/1*WizgUsFeUgISS7vkFl4dEA.jpeg" width='400' height='200'>
- </p>
-
-The technology.md describes the process taking of raw datasets and how they were transformed into a model that we used for our machine learning model. For quick reference, these are the resources that we used:
-
+Resources:
+- Also Please refer our requirements.txt file for libraries and installations.
 - Data Extracted kaggle dataset - [Lending Club loan data](https://www.kaggle.com/wordsforthewise/lending-club)
 - Data dictionary kaggle - [Dictionary](https://www.kaggle.com/jonchan2003/lending-club-data-dictionary)
 - VS Code v1.52.1
@@ -34,9 +28,6 @@ The technology.md describes the process taking of raw datasets and how they were
 - Python v3.7.9
 - GitHub
 - Zoom Client for Meetings v5.4.9
-
-## Communication Protocol
-The main methods of communication were using Slack for daily updates via text, and Zoom for virtual meetings 4 times a week. Additionally, GitHub commit comments were used to indicate any changes done to ensure that the team members are aware of changes.
 
 ## Dataset Exploratory Analysis
 
@@ -51,29 +42,12 @@ The main methods of communication were using Slack for daily updates via text, a
 - After a thorough run with data preprocessing and cleaning, we have achieved criteria that seem to play a vital role in deciding or rejecting a loan application.
 - This dataset will be tied into our analysis further. (maybe consider other valuable features and also predict an individual's chance of securing a loan)
 
-<p align = "center">
-<img src = "https://github.com/JoseCalucag/WokeRUs/blob/main/resources/database.png" width = "700" height = "300">
- </p>
-
-## Database Setup and Communication
-
-- Our search for a more refined or clean data was not successful, and the lending club dataset being the most comprehensive.
-- The dataset was uploaded into GitHub as a large file transfer.
-- Using the data uploaded on to GitHub, data was then wrangled for optimizing our dataset to suit our needs and the initial machine learning algorithm.
-- 4 branches were initialized and setup on Github to ensure that the database and contents do not be overwritten (just because the sheer size)
-- Main communication is through zoom client for meetings software and slack for progress tracking and deliverables time line.
-
 ## Database
 
 - Since the data we possess do not have any relational features that we could use or create an ERD, the datasets we have were merged into one big consolidated dataset.
 - Since there is no schema, we collectively decided to use MongoDB as this was the easiest way to store our data.
-- Storing data locally (each members PC) was the easiest form to work with as dealing with resources such as storage space on the cloud was challenging.
 - We Decided to sample our large dataset, 5% of the raw data, was sampled to stay within the limits of our allocated space and memory usage on the cloud (MongoDB Atlas)
-- Successfully exported the dataset (accepted and rejected files at 5% sampled data) and we were able to also import it to our notebook.
-- Our dataset is massive, hence we want to make use of every data point we can to generate a better model for prediction as well as classification.
-- Hence, our main raw or original dataset is still available locally to ensure we are using our resources to its maximum potential.
-
-![Database_screenshot](resources/datbase_mngo.png)
+- Hence, our main raw or original dataset is still available locally to ensure we are using our resources to its maximum potential. (All original dataset is available in kaggle)
 
 # Machine Learning for Lending Prediction
 
@@ -81,34 +55,55 @@ The project implements Machine Learning in two progressive stages:
 
 ## Stage 1: Binary Classification
 
-The first Machine Learning Algorithm trains a binary classifier to predict if the applicant should be accepted or rejected for a loan from Lending Club. 
-The following algorithms will be used and compared for accuracy and implementation efficiency:
-1. Logistic Regression
-2. SVM Algorithm
-3. Neural Networks
+The first Machine Learning Algorithm trains a binary classifier to predict if the applicant should be accepted or rejected.
+The following algorithm was selected mainly of two key elements after trial with various algorithms:
+
+1. Class imbalance correction
+2. optimizing number of selectors in our algorithm
+3. iterate over different models and sampling.
+4. Decision tree with SMOTE method bringing an accuracy of classification at 94.3%.
+
+<p align = "center">
+<img src = "https://github.com/JoseCalucag/WokeRUs/blob/main/resources/smote_ml.png" width = "500" height = "300">
+ </p>
 
 ## Stage 2: Interest Prediction
 
 The second Machine Learning Algorithm trains a regression model to predict the interest rate that should be provided to an accepted loan borrower.
-The following algorithms will be used and compared for accuracy and implementation efficiency:
-1. Polynomial regression
-2. Decision Tree Algorithm
-3. Neural Networks
+The following key takeaways bought about a model with r2 score of 0.98 and mean square error of 1.00:
 
-## Current Progress
-
-### Stage 1 Analysis
-
-- The team has successfully implemented the decision tree algorithm for Stage 1 Analysis (classifying Loan accepted or not), yielding an 94.7% accuracy on test data.
-- Successfully exported the model (Decision Tree ADABOOST) to our front end and server, The ML with few test features is able to wither predict approved or rejected state of user inputs.
-- Also able to import dataset from Mongo database into the web server for data information of our tested and trained features. 
-
-### Stage 2 Analysis
-
-- implemented applicant grading of interest rate based on 91 features, this boosted our r squared values to predict at 80% the range of interest rates the applicant would fall under.
-- Currently optimizing our neural network and deeplearning algorithm to further understand our data we have. 
-- We hope to complete the project to our expectation the following week.
+1. group by target variable
+2. Ridge and Lasso regression
+3. optimize alpha values
+4. feature selection
 
 <p align = "center">
-<img src = "https://github.com/JoseCalucag/WokeRUs/blob/main/resources/smote_ml.png" width = "500" height = "300">
+<img src = "https://github.com/JoseCalucag/WokeRUs/blob/main/resources/regression.png" width = "500" height = "300">
+ </p>
+
+## Web App (Flask -screenshots)
+
+<p align = "center">
+<img src = "https://github.com/JoseCalucag/WokeRUs/blob/main/resources/main_page.png" width = "500" height = "300">
+ </p>
+
+ <p align = "center">
+<img src = "https://github.com/JoseCalucag/WokeRUs/blob/main/resources/reject_main.png" width = "500" height = "300">
+ </p>
+
+ ## Stage 2: Interest Prediction
+
+ <p align = "center">
+<img src = "https://github.com/JoseCalucag/WokeRUs/blob/main/resources/int_predict.png" width = "500" height = "300">
+ </p>
+
+## Conclusion & Recommendations
+
+1. As a team we would love to find more updated data as this one only goes to 2018.
+2. Further use NLP or a different method to try and classify the rejected dataset taking into consideration the feature Loan Titles.
+3. There was a lot learnt, practiced and implemented during this collaboration.
+
+
+ <p align = "center">
+<img src = "https://github.com/JoseCalucag/WokeRUs/blob/main/resources/images.jpeg" width = "500" height = "300">
  </p>
