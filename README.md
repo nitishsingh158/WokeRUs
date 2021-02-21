@@ -78,7 +78,7 @@ The following key takeaways bought about a model with r2 score of 0.98 and mean 
 4. feature selection
 
 <p align = "center">
-<img src = "https://github.com/JoseCalucag/WokeRUs/blob/main/resources/regression.png" width = "500" height = "300">
+<img src = "https://github.com/JoseCalucag/WokeRUs/blob/main/resources/regreesion.png" width = "500" height = "300">
  </p>
 
 ## Web App (Flask -screenshots)
@@ -94,6 +94,10 @@ The following key takeaways bought about a model with r2 score of 0.98 and mean 
  ## Stage 2: Interest Prediction
 
  <p align = "center">
+<img src = "https://github.com/JoseCalucag/WokeRUs/blob/main/resources/interest.png" width = "500" height = "300">
+ </p>
+
+ <p align = "center">
 <img src = "https://github.com/JoseCalucag/WokeRUs/blob/main/resources/int_predict.png" width = "500" height = "300">
  </p>
 
@@ -101,9 +105,9 @@ The following key takeaways bought about a model with r2 score of 0.98 and mean 
 
 1. As a team we would love to find more updated data as this one only goes to 2018.
 2. Further use NLP or a different method to try and classify the rejected dataset taking into consideration the feature Loan Titles.
-3. There was a lot learnt, practiced and implemented during this collaboration.
+3. There was a lot learned, practiced and implemented during this collaboration.
 
 
  <p align = "center">
-<img src = "https://github.com/JoseCalucag/WokeRUs/blob/main/resources/images.jpeg" width = "500" height = "300">
+<img src = "https://github.com/JoseCalucag/WokeRUs/blob/main/resources/images.jpg" width = "500" height = "300">
  </p>
